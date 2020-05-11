@@ -1,0 +1,314 @@
+/*styles*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face{
+  font-family: montserrat;
+  src: url(montserrat.regular.ttf);
+}
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat';
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: goldenrod;
+  }
+
+
+/*--------         NAVBAR          -------*/
+
+
+ 
+  .navbar {
+    background-color: goldenrod;
+  }
+  .navbar .navbar-brand {
+    color: #ffffff;
+    font-family: 'montserrat';
+  }
+
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #ffffff;
+  }
+  .navbar .navbar-text {
+    color: #ffffff;
+  }
+
+  .navbar .navbar-text a {
+    color: #ffffff;
+  }
+  .navbar .navbar-text a:hover,
+  .navbar .navbar-text a:focus {
+    color: #fffefe; 
+  }
+
+
+  /*---------sepuede eliminar--------*/
+  .navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: #383838;
+}
+
+.navbar .navbar-toggle {
+  border-color: #4caf0a;
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #0997f6;
+}
+
+.navbar .navbar-toggle .navbar-toggler-icon  {
+  color: #ff0000;
+  background-color: royalblue;
+}
+
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #e5ff00;
+}
+
+.navbar .navbar-link {
+  color: #0c0606;
+}
+.navbar .navbar-link:hover {
+  color: #ff00b3;
+}
+
+
+/*---------FIN NAVBAR--------*/
+
+
+
+#redes-sociales .backgroundimg .imagen{
+
+  background-image: url(../images/fondo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: #000;
+  font-family: 'Poppins';
+ 
+}
+
+
+.redes-sociales .text-center{
+    color: chartreuse;
+}
+
+
+.nav-link{
+  color: #f4f4f4;
+  cursor: pointer;
+ }
+
+  .navbar-brand{
+    font-family: 'Poppins';
+    
+  }
+
+
+/*---------Seccion 2  PRIMER MENSAJE--------*/
+.mensaje-uno{
+    padding: 2em;
+    color: white;
+background-color: goldenrod;    
+display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+/*---------FIN Seccion 2  PRIMER MENSAJE--------*/
+
+
+/* ________________________Seccion Presentacion________________________*/
+
+
+
+#presentacion #izquierda {
+    background-image: url(../images/LB17.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #presentacion #izquierda2 {
+    background-image: url(../images/adentro.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;    
+        
+
+  }
+
+  #presentacion #izquierda2 .comentario-bajo{
+    color: goldenrod; 
+    padding: 2em; 
+
+  }
+
+  #presentacion #derecha{
+    background-image: url(../images/vinos3.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+     
+}
+
+#presentacion #derecha2{
+  background-image: url(../images/LB05.jpg);
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;          
+}
+
+#presentacion #derecha .comentario{
+  color:goldenrod; 
+  padding: 2em;   
+
+}
+
+
+
+
+
+
+
+/* ___F I N Seccion Presentacion_____*/
+
+
+
+/*---------Seccion 4  SEGUNDO MENSAJE--------*/
+.mensaje-dos{
+  padding: 2em;
+  color: white;
+  background-color: goldenrod;     display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/*---------FIN Seccion 4  SEGUNDO MENSAJE--------*/
+
+
+
+ 
+
+   /*---------Seccion GALERIA DE IMAGENES--------*/
+
+   .wrapper{
+
+    background-color: darkred;    
+    
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+
+   .img-area{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .single-img{
+     padding: 0 15px 15px;
+   }
+
+   .single-img img{
+     border-radius: 5%;
+   }
+
+
+
+   img:hover{
+     opacity: .5;
+     transition: .9s;
+     
+   }
+
+
+   .mapa{
+    padding-bottom: 1em;
+   }
+
+
+   #contacto .redes{
+     padding-bottom: 1em;
+   }
+   #contacto .redes img{
+    margin: 0 20px;
+    
+     
+
+
+   }
+
+   #contacto{
+    padding: 2em;
+    background-color: rgb(20, 20, 20);
+    color: blanchedalmond;
+    text-align: center;
+
+   }
+
+   #contacto .contactos{
+     
+     color: blanchedalmond;
+     text-align: center;
+     font-family: 'montserrat';
+     
+   }
+
+   hr{
+     background-color: yellow;
+   }
+
+
+
+
+
+
+
+
+
+
+
+   
