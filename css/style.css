@@ -16,17 +16,21 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: goldenrod;
+    background-color: #e0b340;
   }
 
 
 /*-------------------  NAVBAR ----------------------*/
 .navbar {
-   background-color: rgb(36, 36, 36);
+   background-color: #333333;
   }
 .navbar .navbar-brand {
     color: #ffffff;
     font-family: 'montserrat';
+    font-size: 16px;
+    display: flex;
+    overflow: hidden;
+    
   }
 
 .navbar .navbar-brand:hover,
@@ -74,15 +78,16 @@ html, body {
 }
 
 
-/*_________________________Seccion  PRIMER MENSAJE____________________*/
+/*_________________________Seccion MENSAJE____________________*/
 
-.mensaje-uno{
+.mensaje{
   padding: 2em;
   color: white;
-  background-color: goldenrod;    
+  background-color: #e0b340;    
   display: flex;
   text-align: center;
   justify-content: center;
+  overflow: hidden;
     
 }
 
@@ -113,7 +118,29 @@ html, body {
   #presentacion #izquierda2 .comentario-bajo{
     color: goldenrod; 
     padding: 2em; 
+    overflow: hidden;
+  word-wrap: break-word; 
   }
+
+  @media only screen and (max-width: 300px) {
+    #presentacion #izquierda2 .comentario-bajo{
+      color: goldenrod; 
+      padding: 1em; 
+      overflow: hidden;
+    word-wrap: break-word; 
+    }
+  }
+
+  @media only screen and (max-width: 261px) {
+    #presentacion #izquierda2 .comentario-bajo{
+      color: goldenrod; 
+      
+      overflow: hidden;
+    word-wrap: break-word; 
+    }
+  }
+
+  /* ---------------------------------------------------------------------  */
 
   #presentacion #derecha{
   background-image: url(../images/vinos3.jpg);
@@ -140,27 +167,20 @@ html, body {
 
 #presentacion #derecha .comentario{
   color:goldenrod; 
-  padding: 2em;   
-
-}
-
-
-/*--------------Seccion  SEGUNDO MENSAJE------------*/
-.mensaje-dos{
   padding: 2em;
-  color: white;
-  background-color: goldenrod;     display: flex;
-  text-align: center;
-  justify-content: center;
-}
+  
+  /* Control de la altura con base en el texto del div*/
+  overflow: hidden;
+  word-wrap: break-word;   
 
+}
 
 
 /*------------Seccion GALERIA DE IMAGENES------------*/
 
  .wrapper{
 
-  background-color: darkred;      
+  background-color: #7c2121;     
   padding-top: 2em;
   padding-bottom: 1em;
 }
@@ -188,10 +208,29 @@ html, body {
    transition: .9s;
   }
 
+/*---------------------carrousel-------------------*/
+
+.carousel{
+  background-color: #7c2121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExampleControls{
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+
 
   /*---------------------MAPA-------------------*/
   .mapa{
-   padding-bottom: 1em;
+   padding: 1em 0 1em 0;
   }
   
 
@@ -208,7 +247,7 @@ html, body {
 
    #contacto{
     padding: 2em;
-    background-color: rgb(20, 20, 20);
+    background-color: #333333;
     color: blanchedalmond;
     text-align: center;
    }
